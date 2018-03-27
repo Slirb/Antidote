@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/agentButton"
+                android:src="@drawable/agent_u"
+                android:scaleType="centerInside"
+                android:background="#00ffffff"
+                android:onClick="agent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/boothButton"
+                android:scaleType="centerInside"
+                android:src="@drawable/bootheide"
+                android:background="#00ffffff"
+                android:onClick="booth"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/c9Button"
+                android:scaleType="centerInside"
+                android:src="@drawable/c9_tonic"
+                android:background="#00ffffff"
+                android:onClick="tonic"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/mxButton"
+                android:scaleType="centerInside"
+                android:src="@drawable/mx_vile"
+                android:background="#00ffffff"
+                android:onClick="vile"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/oslerButton"
+                android:scaleType="centerInside"
+                android:src="@drawable/oslers_oil"
+                android:background="#00ffffff"
+                android:onClick="osler"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/rubButton"
+                android:scaleType="centerInside"
+                android:src="@drawable/rubiximab"
+                android:background="#00ffffff"
+                android:onClick="rub"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/serumButton"
+                android:scaleType="centerInside"
+                android:src="@drawable/serum_n"
+                android:background="#00ffffff"
+                android:onClick="serum"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/w2Button"
+                android:scaleType="centerInside"
+                android:src="@drawable/w2_rose"
+                android:background="#00ffffff"
+                android:onClick="rose"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/reset_string"
+                android:id="@+id/button"
+                android:onClick="reset"
+                android:layout_span="1"
+                />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
